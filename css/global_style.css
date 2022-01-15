@@ -1,0 +1,131 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Header */
+header {
+    display: block;
+    height: 50px;
+    background-color: #EDF2F4;
+    text-align: right;
+}
+
+.content-logo {
+    float: left;
+    width: 80px;
+    height: 100%;
+    text-align: left;
+}
+
+    .content-logo > img {
+        height: 100%;
+    }
+
+    header > nav {
+        display: inline-block;
+        height: inherit;
+    }
+
+        header > nav > ul {
+            margin: 0px;
+            padding: 0px;
+            height: inherit;
+        }
+
+            header > nav > ul > li {
+                display: inline-block;
+                padding: 0px 10px;
+                height: inherit;
+                list-style: none;
+            }
+
+                header > nav > ul > li > a {
+                    display: inline-block;
+                    height: inherit;
+                    line-height: 50px;
+                    text-decoration: none;
+                    color: black;
+                    font-weight: 600;
+                }
+
+/* Titulo */
+.title-restaurante {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 100px;
+    background-color: #2B2D42;
+}
+
+    footer > ul > li {
+        margin: 20px 0px;
+        list-style: none;
+    }
+
+        footer > ul > li > a {
+            color: white;
+            text-decoration: none;
+        }
+
+    footer > form {
+        float: right;
+        color: white;
+    }
+
+        footer > form > fieldset {
+            border: 2px solid #383B56;
+        }
+
+            footer > form > fieldset > input[type=mail], footer > form > fieldset > textarea {
+                width: 100%;
+            }
+
+/* No disponible */
+.content-image-no-disp {
+    display: block;
+    text-align: center;
+    margin: 50px 0px;
+    max-width: 90%;
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        height: 600px;
+    }
+
+    #item_nav_inicio {
+        display: none;
+    }
+
+    footer {
+        padding: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "nav social"
+            "contact contact";
+    }
+
+    .ft-list-nav {
+        grid-area: nav;
+    }
+
+    .ft-list-social {
+        grid-area: social;
+    }
+
+    .ft-form-contact {
+        grid-area: contact;
+    }
+}

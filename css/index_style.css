@@ -1,0 +1,114 @@
+/* Cover Index */
+.cover-index {
+    display: block;
+    background-image: url(/images/cover-index.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100% - 50px);
+}
+
+    .cover-index > .title-restaurante {
+        display: inline-block;
+        margin: 0px;
+        margin-top: 200px;
+        color: white;
+    }
+
+/* Resumen Nostros */
+.nosotros {
+    display: flex;
+    height: 500px;
+    margin: 20px 5%;
+}
+
+    .nosotros > article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        padding: 20px;
+        background-color: #EDF2F4;
+    }
+
+        .nosotros > article > p {
+            margin: 0px;
+        }
+
+    .cover-nosotros {
+        display: inline-block;
+        width: auto;
+    }
+
+        .cover-nosotros > img {
+            height: 100%;
+        }
+
+/* Ubicacion */
+.ubicacion {
+    margin: 20px 5%;
+}
+
+.map {
+    position: relative;
+}
+
+    .map > img {
+        width: 100%;
+    }
+
+    .map > article {
+        position: absolute;
+        background-color: white;
+        width: 300px;
+        height: auto;
+        top: 0px;
+        right: 0px;
+        margin-top: 20px;
+        margin-right: 50px;
+        padding: 10px;
+        padding-bottom: 50px;
+    }
+
+/* Destacados */
+.destacados {
+    width: 100%;
+    margin: 50px 0px;
+    text-align: center;
+}
+
+.item-plato {
+    display: inline-block;
+    width: 400px;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+    .item-plato > img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+
+/* Responsive */
+@media screen and (max-width: 1060px) {
+    .nosotros {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cover-nosotros > img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .ubicacion > .map > article {
+        position: relative;
+        width: auto;
+        height: auto;
+        margin: 0px;
+        padding: 5px;
+    }
+}

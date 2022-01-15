@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/global_style.css">
+    <link rel="stylesheet" href="./css/index_style.css">
+
+    <title>Restaurante Web</title>
+</head>
+<body>
+    <!-- Cabecera, contiene Logo y una barra de navegación -->
+    <header>
+        <div class="content-logo">
+            <img src="./images/logo_restaurante_web.jpg" alt="Imagen de Logo">
+        </div>
+        <nav>
+            <ul>
+                <li id="item_nav_inicio"><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="menus.html">Menus</a></li>
+                <li><a href="rrhh.html">Trabaja con Nostros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Titulo -->
+    <div class="cover-index">
+        <h1 class="title-restaurante">Restaurante Web</h1>
+    </div>
+    <!-- Seccion de informacion de Nosotros -->
+    <section class="nosotros">
+        <article>
+            <h2>Nuestro Restaurante</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellendus, veniam ab distinctio corporis, iste officia ea voluptatibus voluptates, odio libero alias minima minus cupiditate modi quia eius blanditiis molestias.
+            </p>
+        </article>
+        <div class="cover-nosotros">
+            <img src="./images/img_nosotros.jpg" alt="Imagen de Nosotros">
+        </div>
+    </section>
+    <!-- Seccion de informacion de Ubicacion -->
+    <section class="ubicacion">
+        <div class="map">
+            <article>
+                <h2>Visitanos</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente rerum fugiat voluptates excepturi sequi perferendis veritatis non itaque quidem eius, vitae laudantium, doloremque cupiditate aspernatur dolore ex, sit ea voluptatum!
+                </p>
+            </article>
+            <img src="./images/img_foto_ubic.jpg" alt="Foto Ubicacion">
+        </div>
+    </section>
+    <!-- Seccion de informacion de Platos destacados y/o resumen de menus -->
+    <section class="destacados">
+        <!-- Un item para platos destacados y/o descripcion de un plato general/típico -->
+        <div class="item-plato">
+            <img src="./images/img_plato_entrada.jpg" alt="Imagen Plato de Entrada">
+            <article>
+                <h3>Platos de Entrada</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quae distinctio. Ex tenetur, rem porro a facere cum voluptatum provident magni culpa, ipsa quibusdam rerum voluptatem harum! Illo, laboriosam eos?
+                </p>
+            </article>
+        </div>
+        <div class="item-plato">
+            <img src="./images/img_plato_principal.jpg" alt="Imagen Plato Principal">
+            <article>
+                <h3>Platos Principales</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quae distinctio. Ex tenetur, rem porro a facere cum voluptatum provident magni culpa, ipsa quibusdam rerum voluptatem harum! Illo, laboriosam eos?
+                </p>
+            </article>
+        </div>
+        <div class="item-plato">
+            <img src="./images/img_plato_postre.jpg" alt="Imagen Plato de Postre">
+            <article>
+                <h3>Postres</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quae distinctio. Ex tenetur, rem porro a facere cum voluptatum provident magni culpa, ipsa quibusdam rerum voluptatem harum! Illo, laboriosam eos?
+                </p>
+            </article>
+        </div>
+    </section>
+    <!-- Pie de Pagina -->
+    <footer>
+        <ul class="ft-list-nav">
+            <!-- Lista de navegacion -->
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="menus.html">Menus</a></li>
+            <li><a href="rrhh.html">Trabaja con Nostros</a></li>
+            <li><a href="no_disp.html">No disponible</a></li>
+        </ul>
+        <ul class="ft-list-social">
+            <!-- Lista de Redes Sociales -->
+            <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+        </ul>
+        <!-- Formulario de contacto-->
+        <form class="ft-form-contact">
+            <fieldset>
+                <legend>Contacto</legend>
+                <label for="txt_mail">Email:</label>
+                <input type="mail" name="mail" id="txt_mail" required />
+                <br>
+                <br>
+                <label for="txt_consulta">Mensaje:</label>
+                <br>
+                <textarea name="consulta" id="txt_consulta" cols="30" rows="6" required></textarea>
+                <br>
+                <br>
+                <button type="button">Enviar</button>
+            </fieldset>
+        </form>
+    </footer>
+</body>
+</html>

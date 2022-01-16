@@ -38,49 +38,61 @@
             <form class="form-contacto">
                 <fieldset>
                     <legend>Trabaja con Nosotros</legend>
-                    <fieldset>
-                        <legend>Datos</legend>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre" id="txt_nombre" required />
-                        <br>
-                        <br>
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" name="apellido" id="txt_apellido" required />
-                        <br>
-                        <br>
-                        <label for="txt_mail">Email:</label>
-                        <input type="mail" name="mail" id="txt_mail" required />
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend>Mas Datos</legend>
-                        <label for="drp_genero">Genero:</label>
-                        <select name="tipo_mensaje" id="drp_genero">
-                            <option value="1">Hombre</option>
-                            <option value="2">Mujer</option>
-                        </select>
-                        <br>
-                        <br>
-                        <label for="txt_edad">Email:</label>
-                        <input type="number" name="edad" id="txt_edad" required />
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend>CV</legend>
-                        <label for="txt_file_cv">CV archivo:</label>
-                        <input type="file" name="file_cv" id="txt_file_cv" />
-                        <br>
-                        <br>
-                        <label for="txt_descripcion">Descripcion:</label>
-                        <br>
-                        <textarea name="descripcion" id="txt_descripcion" cols="30" rows="10" required></textarea>
-                    </fieldset>
-                    <br>
-                    <input type="checkbox" name="terminmos_condiciones" id="chk_terminos_condiciones" />
-                    <label for="chk_terminos_condiciones"><strong>Acepto los Terminos y Condiciones</strong></label>
-                    <br>
-                    <br>
-                    <button type="button">Enviar</button>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label class="form-label" for="nombre">Nombre:</label>
+                            <input class="form-control" type="text" name="nombre" id="txt_nombre" required />
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="form-label" for="apellido">Apellido:</label>
+                            <input class="form-control" type="text" name="apellido" id="txt_apellido" required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <label class="form-label" for="txt_mail">Email:</label>
+                            <input class="form-control" type="mail" name="mail" id="txt_mail" required />
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="form-label" for="telefono">Telefono:</label>
+                            <input class="form-control" type="text" name="telefono" id="txt_telefono" required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <label class="form-label" for="drp_genero">Genero:</label>
+                            <select class="form-select" name="drp_genero" id="drp_genero">
+                                <option>Hombre</option>
+                                <option>Mujer</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="form-label" for="txt_edad">Edad:</label>
+                            <input class="form-control" type="number" name="edad" id="txt_edad" required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <label class="form-label" for="txt_file_cv">CV archivo:</label>
+                            <input class="form-control" type="file" name="file_cv" id="txt_file_cv" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <label class="form-label" for="txt_descripcion">Descripcion:</label>
+                            <textarea name="descripcion" id="txt_descripcion" cols="30" rows="10" class="form-control" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="checkbox" name="terminmos_condiciones" id="chk_terminos_condiciones" />
+                            <label class="form-label" for="chk_terminos_condiciones"><strong>Acepto los Terminos y Condiciones</strong></label>
+                        </div>
+                    </div>
+                    
+                    <div class="sec-enviar d-grid gap-2">
+                        <button type="button" class="btn btn-success">Enviar</button>
+                    </div>
                 </fieldset>
             </form>
             <img id="img_formulario" src="images/cover-form.jpg" />
@@ -110,12 +122,12 @@
                 <legend>Contacto</legend>
                 <div class="row">
                     <div class="col-sm-12">
-                        <label for="txt_mail" class="form-label">Email:</label>
+                        <label for="txt_mail" class="form-label"Email:</label>
                         <input type="mail" name="mail" id="txt_mail" class="form-control" required />
                     </div>
                 </div>
 
-                <label for="txt_consulta" class="form-label">Mensaje:</label>
+                <label for="txt_consulta" class="form-label"Mensaje:</label>
                 <textarea name="consulta" id="txt_consulta" cols="30" rows="6" class="form-control" required></textarea>
 
                 <div class="sec-enviar d-grid gap-2">

@@ -79,18 +79,10 @@
     text-align: center;
 }
 
-.item-plato {
+.destacados > .card {
     display: inline-block;
-    width: 400px;
-    margin: 0px 20px;
-    text-align: center;
+    margin: 20px 50px;
 }
-
-    .item-plato > img {
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-    }
 
 /* Responsive */
 @media screen and (max-width: 1060px) {

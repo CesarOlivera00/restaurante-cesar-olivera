@@ -31,27 +31,14 @@ header {
         height: inherit;
     }
 
-        header > nav > ul {
-            margin: 0px;
-            padding: 0px;
-            height: inherit;
-        }
+    header > nav > a.nav-link {
+        color: black;
+    }
 
-            header > nav > ul > li {
-                display: inline-block;
-                padding: 0px 10px;
-                height: inherit;
-                list-style: none;
-            }
-
-                header > nav > ul > li > a {
-                    display: inline-block;
-                    height: inherit;
-                    line-height: 50px;
-                    text-decoration: none;
-                    color: black;
-                    font-weight: 600;
-                }
+    header > nav > a.active {
+        color: dodgerblue;
+        border-bottom: 4px solid dodgerblue;
+    }
 
 /* Titulo */
 .title-restaurante {
@@ -87,9 +74,13 @@ footer {
             border: 2px solid #383B56;
         }
 
-            footer > form > fieldset > input[type=mail], footer > form > fieldset > textarea {
-                width: 100%;
-            }
+        footer > form > fieldset > .row {
+            margin-bottom: 10px;
+        }
+
+        footer > form > fieldset > .sec-enviar {
+            margin-top: 10px;
+        }
 
 /* No disponible */
 .content-image-no-disp {

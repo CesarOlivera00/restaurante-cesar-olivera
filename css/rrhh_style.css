@@ -1,6 +1,6 @@
 .content-form {
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin: 30px;
     padding: 20px;
     background-color: #EDF2F4;
@@ -9,8 +9,8 @@
 .form-contacto {
     display: inline-block;
     width: 500px;
-    height: 650px;
     margin-right: 50px;
+    margin-bottom: 10px;
 }
 
 .content-form > img {
@@ -19,9 +19,11 @@
 }
 
 @media screen and (max-width: 1160px) {
+    .content-form {
+        display: block;
+    }
     .form-contacto, #img_formulario {
         display: block;
-        margin: auto;
         width: 100%;
     }
 }

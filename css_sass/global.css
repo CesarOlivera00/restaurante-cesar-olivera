@@ -1,0 +1,121 @@
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  display: block;
+  height: 50px;
+  background-color: #EDF2F4;
+  text-align: right;
+}
+
+header > nav {
+  display: inline-block;
+  height: inherit;
+}
+
+header > nav > a.nav-link {
+  color: black;
+}
+
+header > nav > a.active {
+  color: dodgerblue;
+  border-bottom: 4px solid dodgerblue;
+}
+
+.content-logo {
+  float: left;
+  width: 80px;
+  height: 100%;
+  text-align: left;
+}
+
+.content-logo > img {
+  height: 100%;
+}
+
+.title-restaurante {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer > ul > li {
+  margin: 20px 0px;
+  list-style: none;
+}
+
+footer > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+footer > form {
+  float: right;
+  color: white;
+}
+
+footer > form > fieldset {
+  border: 2px solid #383B56;
+}
+
+footer > form > fieldset .row {
+  margin-bottom: 10px;
+}
+
+footer > form > fieldset .sec-enviar {
+  margin-top: 10px;
+}
+
+.content-image-no-disp {
+  display: block;
+  text-align: center;
+  margin: 50px 0px;
+  max-width: 90%;
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    height: 650px;
+  }
+  #item_nav_inicio {
+    display: none;
+  }
+  footer {
+    padding: 20px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "nav social" "contact contact";
+  }
+  footer .ft-list-nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: nav;
+  }
+  footer .ft-list-social {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: social;
+  }
+  footer .ft-form-contact {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: contact;
+  }
+}
+/*# sourceMappingURL=global.css.map */

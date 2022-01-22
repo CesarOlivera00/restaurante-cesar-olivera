@@ -50,6 +50,8 @@ footer {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px 100px;
+  background-color: #2B2D42;
 }
 
 footer > ul > li {
@@ -69,6 +71,7 @@ footer > form {
 
 footer > form > fieldset {
   border: 2px solid #383B56;
+  padding: 10px;
 }
 
 footer > form > fieldset .row {

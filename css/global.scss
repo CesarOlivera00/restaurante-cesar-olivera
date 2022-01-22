@@ -48,6 +48,8 @@ header {
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 100px;
+    background-color: #2B2D42;
 
     > ul {
         > li {
@@ -67,6 +69,7 @@ footer {
 
         > fieldset {
             border: 2px solid #383B56;
+            padding: 10px;
 
             .row {
                 margin-bottom: 10px;

@@ -83,68 +83,157 @@
     grid-template-rows: 230px 230px;
     grid-gap: 15px;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
-    .gallery > img {
+    .gallery > .g-item {
+        position: relative;
+    }
+
+        .gallery > .g-item > .data-item {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            background-color: rgba(0,0,0,0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            opacity: 0;
+            cursor: default;
+            transition: opacity .3s;
+        }
+
+        .gallery > .g-item > .data-item:hover {
+            opacity: 1;
+        }
+
+            .gallery > .g-item > .data-item > p, .gallery > .g-item > .data-item > h3 {
+                color: white;
+                font-family: 'Montserrat';
+                text-align: center;
+            }
+
+        .gallery > .g-item > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+/* Nuestra Cocina */
+.info-cocina {
+    background-color: #EDF2F4;
+}
+
+.info-platos {
+    background-color: white;
+}
+
+.info-vegan {
+    background-color: #eeeae1;
+}
+
+.info-with-photo {
+    display: flex;
+    height: 500px;
+}
+
+    .info-with-photo > article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
+    }
+
+        .info-with-photo > article > h2 {
+            font-family: 'Montserrat';
+            margin-bottom: 30px;
+        }
+
+        .info-with-photo > article > p {
+            font-family: 'Montserrat';
+            font-size: 18px;
+            line-height: 35px;
+            width: 700px;
+        }
+
+    .info-with-photo > img {
         height: 100%;
     }
 
-/* Ubicacion */
-.ubicacion {
-    margin: 20px 5%;
-}
-
-.map {
-    position: relative;
-}
-
-    .map > img {
-        width: 100%;
-    }
-
-    .map > article {
-        position: absolute;
-        background-color: white;
-        width: 300px;
-        height: auto;
-        top: 0px;
-        right: 0px;
-        margin-top: 20px;
-        margin-right: 50px;
-        padding: 10px;
-        padding-bottom: 50px;
-    }
-
-/* Destacados */
-.destacados {
-    width: 100%;
-    margin: 50px 0px;
-    text-align: center;
-}
-
-.destacados > .card {
-    display: inline-block;
-    margin: 20px 50px;
-}
-
 /* Responsive */
-@media screen and (max-width: 1060px) {
-    .nosotros {
+@media screen and (max-width: 1500px) {
+    .info-with-photo {
+        height: 400px;
+    }
+
+        .info-with-photo > article > h2 {
+            margin-bottom: 15px;
+        }
+
+        .info-with-photo > article > p {
+            width: auto;
+            padding: 0px 30px;
+        }
+}
+
+@media screen and (max-width: 1120px) {
+    .gallery {
+        display: grid;
+        background-color: white;
+        grid-template-columns: 350px 350px;
+        grid-template-rows: 230px 230px 230px;
+        grid-gap: 15px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .info-with-photo {
         flex-direction: column;
         height: auto;
     }
 
-    .cover-nosotros > img {
-        max-height: 100%;
-        max-width: 100%;
+    .info-platos {
+        flex-direction: column-reverse;
     }
 
-    .ubicacion > .map > article {
-        position: relative;
-        width: auto;
+    .info-with-photo > article {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .cover-index{
+        height: 70%;
+    }
+
+    .cover-index > h1 {
+        font-size: 50px;
+    }
+
+    .nosotros {
         height: auto;
-        margin: 0px;
-        padding: 5px;
+        margin-bottom: 30px;
+    }
+
+        .nosotros > article {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+        }
+
+    .gallery {
+        margin: 0px 10px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 200px 200px 200px;
+        grid-gap: 5px;
     }
 }

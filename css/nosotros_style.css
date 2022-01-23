@@ -1,78 +1,90 @@
+.cover-nosotros {
+    position: relative;
+    display: block;
+    background-image: url(/images/cover-nosotros.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50%;
+}
+
+    .cover-nosotros:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.6);
+    }
+
+    .cover-nosotros > h1 {
+        font-size: 50px;
+    }
+
+    .cover-nosotros > h1, .cover-nosotros h3 {
+        position: relative;
+        display: inline-block;
+        font-family: 'Montserrat';
+        text-align: center;
+        width: 100%;
+        margin: 0px;
+        margin-top: 100px;
+        color: white;
+    }
+
 .content-historia, .content-trayectoria {
     position: relative;
+    margin-top: 50px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 0px 100px;
-    margin-bottom: 50px;
-    padding: 20px 0px;
-    background-color: #EDF2F4;
+    flex-direction: column;
 }
 
     .info {
-        width: 50%;
-        margin: 0px 50px;
-        margin-top: 50px;
+        width: 60%;
         font-family: 'Montserrat';
+        text-align: center;
+        margin-bottom: 30px;
+        line-height: 35px;
     }
 
-.content-trayectoria {
-    height: 600px;
-}
+    .content-historia > img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
 
-.img-main {
-    width: 600px;
-    height: 400px;
-}
-
-.img-second {
-    position: absolute;
-    width: 600px;
-    height: 300px;
-    top: 300px;
-    left: 300px;
-}
-
-@media screen and (max-width: 1190px) {
     .content-trayectoria {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
     }
 
         .content-trayectoria > .info {
-            margin: 50px 0px;
-            width: 80%;
+            padding: 30px;
         }
 
-    .img-second, .img-main {
-        width: 90%;
-        height: auto;
-    }
+        .content-trayectoria > iframe {
+            width: 1200px;
+            height: 600px;
+        }
 
-    .img-second {
-        position: relative;
-        display: block;
-        top: 0px;
-        left: 0px;
+@media screen and (max-width: 1200px) {
+    .content-trayectoria > iframe {
+        width: 90%;
+        height: 500px;
     }
 }
-
-@media screen and (max-width: 900px) {
-    .content-historia, .content-trayectoria {
-        margin: 0px 15px;
+    
+@media screen and (max-width: 600px) {
+    .content-trayectoria > .info {
+        padding: 30px;
+        width: 90%;
     }
-
-    .content-historia {
-        flex-direction: column;
-        align-items: center;
+    .content-trayectoria > iframe {
+        height: 400px;
     }
-
-        .content-historia > iframe {
-            width: 90%;
-        }
-
-        .content-historia > .info {
-            margin-top: 0px;
-            width: 80%;
-        }
 }

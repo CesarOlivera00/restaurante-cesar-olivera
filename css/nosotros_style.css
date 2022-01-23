@@ -1,7 +1,7 @@
 .cover-nosotros {
     position: relative;
     display: block;
-    background-image: url(/images/cover-nosotros.jpg);
+    background-image: url(../images/cover-nosotros.jpg);
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;

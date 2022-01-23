@@ -2,7 +2,7 @@
 .cover-index {
     position: relative;
     display: block;
-    background-image: url(/images/cover-index.jpg);
+    background-image: url(../images/cover-index.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,7 +1,3 @@
-html:not(i) {
-    font-family: 'Montserrat', sans-serif;
-}
-
 body {
     padding: 0px;
     margin: 0px;
@@ -10,7 +6,7 @@ body {
 header {
     display: block;
     height: 50px;
-    background-color: #EDF2F4;
+    background-color: white;
     text-align: right;
 
     > nav {
@@ -42,7 +38,9 @@ header {
 .title-restaurante {
     display: block;
     width: 100%;
+    margin: 20px 0px;
     text-align: center;
+    font-family: 'Montserrat';
 }
 
 footer {
@@ -94,10 +92,6 @@ footer {
         height: 650px;
     }
 
-    #item_nav_inicio {
-        display: none;
-    }
-
     footer {
         padding: 20px;
         grid-template-columns: 1fr 1fr;
@@ -117,5 +111,11 @@ footer {
         .ft-form-contact {
             grid-area: contact;
         }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #item_nav_rrhh {
+        display: none;
     }
 }

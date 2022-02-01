@@ -1,3 +1,5 @@
+$orange-primary: #E67E22;
+
 body {
     padding: 0px;
     margin: 0px;
@@ -12,14 +14,46 @@ header {
     > nav {
         display: inline-block;
         height: inherit;
+        align-items: center;
 
         > a.nav-link {
+            margin: 0px 5px;
+            padding: 0px 1rem;
+            border-radius: 20px;
+            line-height: 35px;
             color: black;
+            height: 35px;
+            border-color: $orange-primary;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: color 350ms ease-in-out;
+            
+            &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 100%;
+                background: $orange-primary;
+                z-index: -1;
+                transition: width 350ms ease-in-out;
+            }
+            
+            &:hover {
+                color: #fff;
+                &:after {
+                    width: 110%;
+                }
+            }
         }
 
-        > a.active {
-            color: dodgerblue;
-            border-bottom: 4px solid dodgerblue;
+        > a.nav-link.active {
+            background-color: $orange-primary;
+            color: white;
         }
     }
 }

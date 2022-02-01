@@ -13,15 +13,53 @@ header {
 header > nav {
   display: inline-block;
   height: inherit;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header > nav > a.nav-link {
+  margin: 0px 5px;
+  padding: 0px 1rem;
+  border-radius: 20px;
+  line-height: 35px;
   color: black;
+  height: 35px;
+  border-color: #E67E22;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  -webkit-transition: color 350ms ease-in-out;
+  transition: color 350ms ease-in-out;
 }
 
-header > nav > a.active {
-  color: dodgerblue;
-  border-bottom: 4px solid dodgerblue;
+header > nav > a.nav-link:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  background: #E67E22;
+  z-index: -1;
+  -webkit-transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
+}
+
+header > nav > a.nav-link:hover {
+  color: #fff;
+}
+
+header > nav > a.nav-link:hover:after {
+  width: 110%;
+}
+
+header > nav > a.nav-link.active {
+  background-color: #E67E22;
+  color: white;
 }
 
 .content-logo {

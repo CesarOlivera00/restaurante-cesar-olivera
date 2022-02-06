@@ -3,6 +3,7 @@ body {
   margin: 0px;
 }
 
+/* Header */
 header {
   display: block;
   height: 50px;
@@ -60,6 +61,8 @@ header > nav > a.nav-link:hover:after {
 header > nav > a.nav-link.active {
   background-color: #E67E22;
   color: white;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(241, 196, 15, 0.7);
+          box-shadow: 0px 0px 5px 0px rgba(241, 196, 15, 0.7);
 }
 
 .content-logo {
@@ -81,6 +84,7 @@ header > nav > a.nav-link.active {
   font-family: 'Montserrat';
 }
 
+/* Footer */
 footer {
   display: -ms-grid;
   display: grid;
@@ -116,6 +120,49 @@ footer > form > fieldset .row {
 
 footer > form > fieldset .sec-enviar {
   margin-top: 10px;
+}
+
+/* Box Menu */
+.box-menu {
+  display: inline-block;
+  background-color: white;
+  width: 350px;
+  height: auto;
+  margin: 10px 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  border-radius: 10px;
+  -webkit-box-shadow: 6px 5px 10px -6px rgba(0, 0, 0, 0.44);
+          box-shadow: 6px 5px 10px -6px rgba(0, 0, 0, 0.44);
+}
+
+.box-menu > .foto {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.box-menu > .foto > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.box-menu > h3 {
+  font-weight: 400;
+  display: block;
+  text-align: center;
+  margin: 5px;
+}
+
+.box-menu > .descripcion {
+  padding: 0px 10px;
+}
+
+.box-menu > .descripcion > p {
+  text-align: center;
 }
 
 .content-image-no-disp {

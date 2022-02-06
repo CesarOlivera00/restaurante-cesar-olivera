@@ -1,51 +1,23 @@
-.section-menu > h2 {
-    margin-left: 50px;
-    padding: 5px;
-    background-color: #EDF2F4;
-    font-family: 'Montserrat';
+body {
+    background-color: #eeeae1;
 }
 
-.content-list-menu {
-    display: flex;
-    background-color: #EDF2F4;
-    margin: 0px 100px;
-    margin-bottom: 50px;
-    justify-content: center;
-    align-items: center;
+.section-menu {
+    text-align: center;
 }
 
-    .content-list-menu > ul {
-        margin: 0px 50px;
+    .section-menu > h2 {
+        margin-left: 50px;
+        padding: 5px;
+        padding-left: 20px;
+        background-color: white;
+        border-radius: 10px 0px 0px 10px;
+        font-family: 'Montserrat';
+        text-align: left;
     }
 
-        .content-list-menu > ul > li {
-            margin: 20px 0px;
-        }
-
-@media screen and (max-width: 1190px) {
-    .content-list-menu {
-        flex-direction: column;
+    .section-menu > .items-menu {
+        text-align: center;
+        margin: 30px auto;
+        max-width: 1400px;
     }
-
-        .content-list-menu > img {
-            width: 100%;
-        }
-
-        .content-list-menu > ul {
-            text-align: center;
-        }
-
-            .content-list-menu > ul > li {
-                display: inline-block;
-                margin: 10px;
-                background-color: #e2e5e5;
-                padding: 2px;
-            }
-}
-
-@media screen and (max-width: 800px) {
-    .content-list-menu {
-        margin: 0px 5%;
-        margin-bottom: 30px;
-    }
-}

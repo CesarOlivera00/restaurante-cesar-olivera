@@ -1,4 +1,8 @@
+/* Variables */
 $orange-primary: #E67E22;
+
+/* Mapa */
+$maparedes: (facebook: blue, twitter: dodgerblue, instagram: red);
 
 body {
     padding: 0px;
@@ -80,6 +84,24 @@ header {
 }
 
 /* Footer */
+.icons-redes {
+    padding: 10px;
+    text-align: right;
+    background-color: powderblue;
+    
+    > a {
+        > i {
+            font-size: 35px;
+        }
+    }
+}
+
+@each $red, $color in $maparedes {
+    .#{$red}--link{
+        color: $color;
+    }
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

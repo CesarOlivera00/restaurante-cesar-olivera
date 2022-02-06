@@ -1,3 +1,5 @@
+/* Variables */
+/* Mapa */
 body {
   padding: 0px;
   margin: 0px;
@@ -85,6 +87,28 @@ header > nav > a.nav-link.active {
 }
 
 /* Footer */
+.icons-redes {
+  padding: 10px;
+  text-align: right;
+  background-color: powderblue;
+}
+
+.icons-redes > a > i {
+  font-size: 35px;
+}
+
+.facebook--link {
+  color: blue;
+}
+
+.twitter--link {
+  color: dodgerblue;
+}
+
+.instagram--link {
+  color: red;
+}
+
 footer {
   display: -ms-grid;
   display: grid;

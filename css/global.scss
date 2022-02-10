@@ -1,8 +1,17 @@
 /* Variables */
 $orange-primary: #E67E22;
 
+
 /* Mapa */
 $maparedes: (facebook: blue, twitter: dodgerblue, instagram: red);
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html:not(i) {
+    font-family: 'Montserrat';
+}
 
 body {
     padding: 0px;
@@ -12,9 +21,10 @@ body {
 /* Header */
 header {
     display: block;
-    height: 50px;
-    background-color: white;
-    text-align: right;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
 
     > nav {
         display: inline-block;
@@ -22,56 +32,72 @@ header {
         align-items: center;
 
         > a.nav-link {
-            margin: 0px 5px;
-            padding: 0px 1rem;
-            border-radius: 20px;
-            line-height: 35px;
-            color: black;
-            height: 35px;
-            border-color: $orange-primary;
             position: relative;
-            overflow: hidden;
-            z-index: 1;
-            transition: color 350ms ease-in-out;
-            
-            &:after {
+            display: inline-block;
+            height: 100%;
+            padding: 0px 15px;
+            text-decoration: none;
+            line-height: 60px;
+            color: white;
+            transition: all 450ms ease;
+
+            &::before,
+            &::after {
                 content: '';
-                position: absolute;
                 display: block;
-                top: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 0;
-                height: 100%;
-                background: $orange-primary;
-                z-index: -1;
-                transition: width 350ms ease-in-out;
+                position: absolute;
+                transition: width 540ms, opacity 500ms ease;
+
+                height: 3px;
+                bottom: 0px;
+                left: 0px;
             }
-            
+
+            &::before {
+                width: 0;
+                background-color: $orange-primary;
+            }
+
+            &::after {
+                width: 100%;
+                border-top: 0;
+                opacity: 0;
+            }
+
             &:hover {
-                color: #fff;
-                &:after {
-                    width: 110%;
+                color: $orange-primary;
+                
+                &::before {
+                    width: 0;
+                    animation: animate-nav-link 300ms ease forwards;
+                }
+
+                &::after {
+                    opacity: 1;
                 }
             }
-        }
-
-        > a.nav-link.active {
-            background-color: $orange-primary;
-            color: white;
-            box-shadow: 0px 0px 5px 0px rgba(241, 196, 15, 0.7);
         }
     }
 }
 
+@keyframes animate-nav-link {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
 .content-logo {
-    float: left;
     width: 80px;
     height: 100%;
-    text-align: left;
+    padding: 5px;
 
     > img {
-        height: 100%;
+        max-height: 100%;
+        
     }
 }
 
@@ -184,6 +210,10 @@ footer {
     text-align: center;
     margin: 50px 0px;
     max-width: 90%;
+}
+
+.shadow {
+    box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.75);
 }
 
 @media screen and (max-width: 900px) {

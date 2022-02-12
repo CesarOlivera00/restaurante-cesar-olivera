@@ -1,41 +1,39 @@
 /* Variables */
-/* Mapa */
-.facebook--link {
-  color: blue;
+.title-h3 {
+  color: white;
+  font-size: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
 }
 
-.twitter--link {
-  color: dodgerblue;
+.title-main-h1, .title-restaurante {
+  color: white;
+  font-size: 'Montserrat', sans-serif;
+  font-size: 100px;
+  font-weight: 300;
 }
 
-.instagram--link {
-  color: red;
+.title-second-h1 {
+  color: white;
+  font-size: 'Montserrat', sans-serif;
+  font-size: 70px;
+  font-weight: 300;
 }
 
-.main-color {
-  color: #17202A;
+.props-background-image-center, .cover-title {
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.food-color {
-  color: #E67E22;
-}
-
-.drink-color {
-  color: #A40E4C;
-}
-
-*, ::after, ::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html:not(i) {
-  font-family: 'Montserrat';
-}
-
-body {
-  padding: 0px;
-  margin: 0px;
+.filter-dark-background, .cover-title:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* Header */
@@ -49,6 +47,16 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+header .content-logo {
+  width: 80px;
+  height: 100%;
+  padding: 5px;
+}
+
+header .content-logo > img {
+  max-height: 100%;
 }
 
 header > nav {
@@ -130,24 +138,6 @@ header > nav > a.nav-link:not(.active):hover::after {
   }
 }
 
-.content-logo {
-  width: 80px;
-  height: 100%;
-  padding: 5px;
-}
-
-.content-logo > img {
-  max-height: 100%;
-}
-
-.title-restaurante {
-  display: block;
-  width: 100%;
-  margin: 20px 0px;
-  text-align: center;
-  font-family: 'Montserrat';
-}
-
 /* Footer */
 .icons-redes {
   padding: 10px;
@@ -188,12 +178,108 @@ footer > form > fieldset {
   padding: 10px;
 }
 
-footer > form > fieldset .row {
-  margin-bottom: 10px;
+footer > form > fieldset #txt_mail {
+  display: block;
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-footer > form > fieldset .sec-enviar {
-  margin-top: 10px;
+footer > form > fieldset #txt_consulta {
+  display: block;
+  width: 100%;
+  height: 80px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer > form > fieldset button {
+  display: block;
+  width: 100%;
+  height: 30px;
+  border: 2px solid #239B56;
+  background-color: #2ECC71;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mapa */
+.facebook--link {
+  color: blue;
+}
+
+.twitter--link {
+  color: dodgerblue;
+}
+
+.instagram--link {
+  color: red;
+}
+
+.main-color {
+  color: #17202A;
+}
+
+.food-color {
+  color: #E67E22;
+}
+
+.drink-color {
+  color: #A40E4C;
+}
+
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html:not(i) {
+  font-family: 'Montserrat';
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.title-restaurante {
+  display: block;
+  width: 100%;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+/* Cover Title Section */
+.cover-title {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50%;
+}
+
+.cover-title:before {
+  content: '';
+}
+
+.cover-title > h1, .cover-title h3 {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  margin-top: 100px;
+  font-weight: 300;
+}
+
+.cover-title > h1 {
+  font-size: 70px;
+}
+
+.cover-title > h3 {
+  font-size: 30px;
 }
 
 /* Box Menu */
@@ -229,6 +315,24 @@ footer > form > fieldset .sec-enviar {
   display: block;
   text-align: center;
   margin: 5px 40px;
+}
+
+.box-menu > h3.title-dessert {
+  font-size: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #E98935;
+}
+
+.box-menu > h3.title-main-food {
+  font-size: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #DC7418;
+}
+
+.box-menu > h3.title-drinks {
+  font-size: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #A40E4C;
 }
 
 .box-menu > .descripcion {
@@ -281,9 +385,20 @@ footer > form > fieldset .sec-enviar {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .cover-title {
+    position: relative;
+    width: 100%;
+    height: 70%;
+  }
+}
+
 @media screen and (max-width: 520px) {
   #item_nav_rrhh {
     display: none;
+  }
+  .box-menu {
+    margin: 10px;
   }
 }
 /*# sourceMappingURL=global.css.map */

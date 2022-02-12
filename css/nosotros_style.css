@@ -3,45 +3,8 @@ body {
 }
 
 .cover-nosotros {
-    position: relative;
-    display: block;
     background-image: url(../images/cover-nosotros.jpg);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 50%;
 }
-
-    .cover-nosotros:before {
-        content:'';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0,0,0,0.6);
-    }
-
-    .cover-nosotros > h1, .cover-nosotros h3 {
-        position: relative;
-        display: inline-block;
-        font-family: 'Montserrat';
-        text-align: center;
-        width: 100%;
-        margin: 0px;
-        margin-top: 100px;
-        color: white;
-        font-weight: 300;
-    }
-
-    .cover-nosotros > h1 {
-        font-size: 70px;
-    }
-    .cover-nosotros > h3 {
-        font-size: 30px;
-    }
 
 .content-historia, .content-trayectoria {
     position: relative;

@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenido al RestoBar, el restaurante donde podras disfrutar de varias culturas culinarias y bebidas tambien de muchos paises de todos los contienentes."/>
     <link rel="icon" type="image/ico" href="favicon.ico"/>
-
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,7 @@
         </nav>
     </header>
     <!-- Titulo -->
-    <div class="cover-index">
+    <div class="cover-title cover-index">
         <h1 class="title-restaurante">BIENVENIDOS</h1>
         <h3>Este es un Restaurante de primera calidad.</h3>
     </div>
@@ -158,19 +158,13 @@
         <form class="ft-form-contact">
             <fieldset>
                 <legend>Contacto</legend>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <label for="txt_mail" class="form-label">Email:</label>
-                        <input type="mail" name="mail" id="txt_mail" class="form-control" required />
-                    </div>
-                </div>
-
+                <label for="txt_mail" class="form-label">Email:</label>
+                <input type="mail" name="mail" id="txt_mail" class="form-control" required />
+                <br>
                 <label for="txt_consulta" class="form-label">Mensaje:</label>
                 <textarea name="consulta" id="txt_consulta" cols="30" rows="6" class="form-control" required></textarea>
-
-                <div class="sec-enviar d-grid gap-2">
-                    <button type="button" class="btn btn-success">Enviar</button>
-                </div>
+                <br>
+                <button type="button" class="btn btn-success">Enviar</button>
             </fieldset>
         </form>
     </footer>

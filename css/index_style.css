@@ -4,38 +4,9 @@ body {
 
 /* Cover Index */
 .cover-index {
-    position: relative;
-    display: block;
     background-image: url(../images/cover-index.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
     height: calc(100% - 50px);
 }
-
-    .cover-index::before {
-        content:'';
-	    position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0,0,0,0.6);
-    }
-
-    .cover-index > h1, .cover-index h3 {
-        position: relative;
-        display: inline-block;
-        font-family: 'Montserrat';
-        text-align: center;
-        width: 100%;
-        margin: 0px;
-        margin-top: 150px;
-        color: white;
-        font-weight: 300;
-    }
 
     .cover-index > h1 {
         font-size: 100px;

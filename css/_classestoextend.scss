@@ -1,0 +1,42 @@
+.title-h3 {
+    color: white;
+    font-size: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.title-main-h1 {
+    color: white;
+    font-size: 'Montserrat', sans-serif;
+    font-size: 100px;
+    font-weight: 300;
+}
+
+.title-second-h1 {
+    color: white;
+    font-size: 'Montserrat', sans-serif;
+    font-size: 70px;
+    font-weight: 300;
+}
+
+.props-background-image-center {
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.filter-dark-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+
+@mixin title-border-box($size, $color) {
+    font-size: $size;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $color;
+}

@@ -1,6 +1,47 @@
 body {
-    background-color: #eeeae1;
+    background-color: #0E141B;
 }
+
+.cover-menu {
+    position: relative;
+    display: block;
+    background-image: url(../images/cover-menu.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50%;
+}
+
+    .cover-menu:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.6);
+    }
+
+    .cover-menu > h1, .cover-menu h3 {
+        position: relative;
+        display: inline-block;
+        font-family: 'Montserrat';
+        text-align: center;
+        width: 100%;
+        margin: 0px;
+        margin-top: 100px;
+        color: white;
+        font-weight: 300;
+    }
+
+    .cover-menu > h1 {
+        font-size: 70px;
+    }
+    .cover-menu > h3 {
+        font-size: 30px;
+    }
 
 .section-menu {
     text-align: center;
@@ -10,7 +51,7 @@ body {
         margin-left: 50px;
         padding: 5px;
         padding-left: 20px;
-        background-color: white;
+        color: white;
         border-radius: 10px 0px 0px 10px;
         font-family: 'Montserrat';
         text-align: left;
@@ -21,3 +62,7 @@ body {
         margin: 30px auto;
         max-width: 1400px;
     }
+
+.section-menu.desserts > h2 { background-color: #EB9447; }
+.section-menu.main-food > h2 { background-color: #CA6A16; }
+.section-menu.drinks > h2 { background-color: #A40E4C; }

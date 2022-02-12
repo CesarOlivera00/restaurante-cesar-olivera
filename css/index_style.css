@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #0E141B;
 }
 
 /* Cover Index */
@@ -205,7 +205,6 @@ body {
 @media screen and (max-width: 1120px) {
     .gallery {
         display: grid;
-        background-color: white;
         grid-template-columns: 350px 350px;
         grid-template-rows: 230px 230px 230px;
         grid-gap: 15px;
@@ -256,5 +255,15 @@ body {
         grid-template-columns: 50% 50%;
         grid-template-rows: 200px 200px 200px;
         grid-gap: 5px;
+    }
+
+    .info-with-photo {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cover-index > h1 {
+        font-size: 40px;
     }
 }

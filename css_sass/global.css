@@ -1,5 +1,29 @@
 /* Variables */
 /* Mapa */
+.facebook--link {
+  color: blue;
+}
+
+.twitter--link {
+  color: dodgerblue;
+}
+
+.instagram--link {
+  color: red;
+}
+
+.main-color {
+  color: #17202A;
+}
+
+.food-color {
+  color: #E67E22;
+}
+
+.drink-color {
+  color: #A40E4C;
+}
+
 *, ::after, ::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -47,7 +71,12 @@ header > nav > a.nav-link {
   transition: all 450ms ease;
 }
 
-header > nav > a.nav-link::before, header > nav > a.nav-link::after {
+header > nav > a.nav-link.active {
+  border-bottom: 3px solid #E67E22;
+  color: #E67E22;
+}
+
+header > nav > a.nav-link:not(.active)::before, header > nav > a.nav-link:not(.active)::after {
   content: '';
   display: block;
   position: absolute;
@@ -58,28 +87,28 @@ header > nav > a.nav-link::before, header > nav > a.nav-link::after {
   left: 0px;
 }
 
-header > nav > a.nav-link::before {
+header > nav > a.nav-link:not(.active)::before {
   width: 0;
   background-color: #E67E22;
 }
 
-header > nav > a.nav-link::after {
+header > nav > a.nav-link:not(.active)::after {
   width: 100%;
   border-top: 0;
   opacity: 0;
 }
 
-header > nav > a.nav-link:hover {
+header > nav > a.nav-link:not(.active):hover {
   color: #E67E22;
 }
 
-header > nav > a.nav-link:hover::before {
+header > nav > a.nav-link:not(.active):hover::before {
   width: 0;
   -webkit-animation: animate-nav-link 300ms ease forwards;
           animation: animate-nav-link 300ms ease forwards;
 }
 
-header > nav > a.nav-link:hover::after {
+header > nav > a.nav-link:not(.active):hover::after {
   opacity: 1;
 }
 
@@ -128,18 +157,6 @@ header > nav > a.nav-link:hover::after {
 
 .icons-redes > a > i {
   font-size: 35px;
-}
-
-.facebook--link {
-  color: blue;
-}
-
-.twitter--link {
-  color: dodgerblue;
-}
-
-.instagram--link {
-  color: red;
 }
 
 footer {
@@ -211,7 +228,7 @@ footer > form > fieldset .sec-enviar {
   font-weight: 400;
   display: block;
   text-align: center;
-  margin: 5px;
+  margin: 5px 40px;
 }
 
 .box-menu > .descripcion {

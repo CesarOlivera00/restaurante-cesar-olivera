@@ -1,13 +1,9 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <meta name="description" content="Listado de menus, postres, comidas, bebidas, del restaurante RestoBar. Se muestran los 6 destacados en nuestro ultimo ciclo de trabajo."/>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,19 +21,22 @@
     <!-- Cabecera, contiene Logo y una barra de navegación -->
     <header class="shadow-sm">
         <div class="content-logo">
-            <img src="./images/logo_restaurante_web.jpg" alt="Imagen de Logo">
+            <img src="./images/logo-225px.webp" alt="Imagen de Logo">
         </div>
-        <nav class="nav justify-content-end">
+        <nav>
             <a class="nav-link" href="index.html">Inicio</a>
             <a class="nav-link" href="nosotros.html">Nosotros</a>
             <a class="nav-link active" href="menus.html">Menus</a>
-            <a class="nav-link" href="rrhh.html">Trabaja con Nosotros</a>
+            <a id="item_nav_rrhh" class="nav-link" href="rrhh.html">Trabaja con Nosotros</a>
         </nav>
     </header>
     <!-- Titulo -->
-    <h1 class="title-restaurante">Menus</h1>
+    <div class="cover-menu">
+        <h1>Sobre Nosotros</h1>
+        <h3>Nuestros platos de entrada, principales y bebidas!</h3>
+    </div>
     <article>
-        <section class="section-menu">
+        <section class="section-menu desserts">
             <h2>Entrada</h2>
             <article class="items-menu">
                 <div class="box-menu">
@@ -120,7 +119,7 @@
                 </div>
             </article>
         </section>
-        <section class="section-menu">
+        <section class="section-menu main-food">
             <h2>Principal</h2>
             <article class="items-menu">
                 <div class="box-menu">
@@ -197,6 +196,85 @@
                         <p>
                             Aunque el ceviche es un plato típico de la gastronomía latinoamericana en 
                             general, teniendo cada país su particular estilo de preparación.
+                        </p>
+                    </article>
+                </div>
+            </article>
+        </section>
+        <section class="section-menu drinks">
+            <h2>Bebidas</h2>
+            <article class="items-menu">
+                <div class="box-menu">
+                    <div class="foto">
+                        <img src="images/drinks/tequila.webp" alt="Imagen de tequila">
+                    </div>
+                    <h3>Tequila</h3>
+                    <article class="descripcion">
+                        <p>
+                            El tequila es un destilado originario del municipio de Tequila en 
+                            el estado de Jalisco, México.
+                        </p>
+                    </article>
+                </div>
+                <div class="box-menu">
+                    <div class="foto">
+                        <img src="images/drinks/vodka.webp" alt="Imagen de vodka">
+                    </div>
+                    <h3>Vodka</h3>
+                    <article class="descripcion">
+                        <p>
+                            El Vodka se toma frío, la botella tiene que estar en el congelador o nevera 
+                            (nada de hielo) y no lo mezclan con otra bebida. “Na zdoróvie” (Salud).
+                        </p>
+                    </article>
+                </div>
+                <div class="box-menu">
+                    <div class="foto">
+                        <img src="images/drinks/fruit-drink.webp" alt="Imagen fruit shakes">
+                    </div>
+                    <h3>Fruit Shakes</h3>
+                    <article class="descripcion">
+                        <p>
+                            Por tan sólo 40 céntimos te puedes comprar un granizado de fruta fresca en los puestos 
+                            callejeros de muchos países de Asia.
+                        </p>
+                    </article>
+                </div>
+                <div class="box-menu">
+                    <div class="foto">
+                        <img src="images/drinks/caipirinha.webp" alt="Imagen de carpinha">
+                    </div>
+                    <h3>Carpinha</h3>
+                    <article class="descripcion">
+                        <p>
+                            La Caipirinha es una bebida alcohólica refrescante muy popular en todo el mundo pero originaria 
+                            de Brasil. Esta hecha con Cachaça, lima o limon, hielo picado y azúcar.
+                        </p>
+                    </article>
+                </div>
+                <div class="box-menu">
+                    <div class="foto">
+                        <img src="images/drinks/vino-tinto.webp" alt="imagen de vino tinto">
+                    </div>
+                    <h3>Vino Tinto</h3>
+                    <article class="descripcion">
+                        <p>
+                            El vino tinto es un tipo de vino procedente mayormente de mostos de uvas tintas, 
+                            con la elaboración pertinente para conseguir la difusión de la materia colorante 
+                            que contienen los hollejos de la uva.
+                        </p>
+                    </article>
+                </div>
+                <div class="box-menu">
+                    <div class="foto">
+                        <img src="images/drinks/mojito.webp" alt="Imagen de Mojito">
+                    </div>
+                    <h3>Mojito</h3>
+                    <article class="descripcion">
+                        <p>
+                            El mojito es un popular cóctel originario de Cuba, compuesto de ron, azúcar, 
+                            lima, menta o hierba buena y agua mineralizada. No es que esté bueno, es que 
+                            está buenísimo!
                         </p>
                     </article>
                 </div>

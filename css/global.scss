@@ -1,9 +1,25 @@
 /* Variables */
 $orange-primary: #E67E22;
+$color-dessert: #E98935;
+$color-food: #DC7418;
+$color-driks: #A40E4C;
 
 
 /* Mapa */
 $maparedes: (facebook: blue, twitter: dodgerblue, instagram: red);
+$mapacolor: (main: #17202A, food: #E67E22, drink: #A40E4C);
+
+@each $red, $color in $maparedes {
+    .#{$red}--link{
+        color: $color;
+    }
+}
+
+@each $color, $val in $mapacolor {
+    .#{$color}-color{
+        color: $val;
+    }
+}
 
 *, ::after, ::before {
     box-sizing: border-box;
@@ -40,7 +56,14 @@ header {
             line-height: 60px;
             color: white;
             transition: all 450ms ease;
+        }
 
+        > a.nav-link.active {
+            border-bottom: 3px solid $orange-primary;
+            color: $orange-primary;
+        }
+
+        > a.nav-link:not(.active) {
             &::before,
             &::after {
                 content: '';
@@ -122,11 +145,7 @@ header {
     }
 }
 
-@each $red, $color in $maparedes {
-    .#{$red}--link{
-        color: $color;
-    }
-}
+
 
 footer {
     display: grid;
@@ -194,7 +213,7 @@ footer {
         font-weight: 400;
         display: block;
         text-align: center;
-        margin: 5px;
+        margin: 5px 40px;
     }
 
     > .descripcion {

@@ -1,29 +1,39 @@
+body {
+    background-color: #0E141B;
+}
+
 .content-form {
     display: flex;
     justify-content: center;
     margin: 30px;
     padding: 20px;
-    background-color: #EDF2F4;
+    background-color: #17202A;
 }
 
-.form-contacto {
-    display: inline-block;
-    width: 500px;
-    margin-right: 50px;
-    margin-bottom: 10px;
-}
-
-.content-form > img {
-    height: 650px;
-    width: 500px;
-}
-
-@media screen and (max-width: 1160px) {
-    .content-form {
-        display: block;
+    .content-form > .form-contacto {
+        display: inline-block;
+        max-width: 500px;
+        margin-right: 50px;
+        margin-bottom: 10px;
     }
+
+    .content-form > img {
+        height: 650px;
+        width: 500px;
+    }
+
+    .content-form label {
+        color: white;
+    }
+
+
+
+@media screen and (max-width: 1000px) {
+    .content-form > .form-contacto {
+        margin-right: 0px;
+    }
+
     .form-contacto, #img_formulario {
-        display: block;
-        width: 100%;
+        display: none;
     }
 }

@@ -75,6 +75,7 @@ header > nav > a.nav-link {
   text-decoration: none;
   line-height: 60px;
   color: white;
+  font-family: 'Montserrat', sans-serif;
   -webkit-transition: all 450ms ease;
   transition: all 450ms ease;
 }
@@ -142,7 +143,7 @@ header > nav > a.nav-link:not(.active):hover::after {
 .icons-redes {
   padding: 10px;
   text-align: right;
-  background-color: powderblue;
+  background-color: orange;
 }
 
 .icons-redes > a > i {

@@ -1,0 +1,107 @@
+body {
+    background-color: #0E141B;
+}
+
+.cover-chefs {
+    background-image: url(../images/fire-chef.gif);
+    background-position: bottom;
+    background-attachment: initial;
+}
+
+.info-chef {
+    display: flex;
+    height: 400px;
+    background-color: #17202A;
+    border-radius: 20px;
+    width: 1100px;
+    margin: 20px auto;
+}
+
+.info-chef.revert {
+    flex-direction: row-reverse;
+}
+
+        .info-chef > .perfil-chef > img {
+            position: relative;
+            height: 500px;
+            top: -100px;
+        }
+
+    .info-chef > article {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+
+        .info-chef > article > p {
+            line-height: 30px;
+        }
+
+/* Cocineros */
+.cocineros-dedicados {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.item-cocinero {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    margin: 20px 50px;
+}
+
+    .item-cocinero > img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .item-cocinero > article {
+        color: white;
+        width: 100%;
+        text-align: center;
+    }
+
+        .item-cocinero > article > h3 {
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .item-cocinero > article > p {
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+        }
+
+@media screen and (max-width: 1200px) {
+    .info-chef {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .info-chef {
+        width: 90%;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .info-chef, .info-chef.revert {
+        flex-direction: column;
+        height: auto;
+    }
+
+        .info-chef > .perfil-chef {
+            text-align: center;
+        }
+
+        .info-chef > .perfil-chef > img {
+            top: 0px;
+            max-width: 90%;
+            height: auto;
+        }
+}

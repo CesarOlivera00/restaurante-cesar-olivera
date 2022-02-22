@@ -69,6 +69,8 @@ body {
 
     .cover-title > h1 {
         font-size: 70px;
+        text-transform: uppercase;
+        letter-spacing: 20px;
     }
     .cover-title > h3 {
         font-size: 30px;
@@ -172,11 +174,19 @@ body {
 }
 
 @media screen and (max-width: 520px) {
+    .box-menu {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
     #item_nav_rrhh {
         display: none;
     }
+}
 
-    .box-menu {
-        margin: 10px;
+@media screen and (max-width: 450px) {
+    #item_nav_inicio {
+        display: none;
     }
 }

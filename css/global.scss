@@ -165,6 +165,20 @@ body {
     }
 }
 
+@media screen and (max-width: 650px) {
+    .cover-title > h1 {
+        font-size: 45px;
+    }
+
+    .cover-title > h3 {
+        font-size: 25px;
+    }
+
+    #item_nav_rrhh {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .cover-title {
         position: relative;
@@ -174,14 +188,12 @@ body {
 }
 
 @media screen and (max-width: 520px) {
+    .cover-title > h1 {
+        font-size: 35px;
+    }
+
     .box-menu {
         margin: 10px;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    #item_nav_rrhh {
-        display: none;
     }
 }
 

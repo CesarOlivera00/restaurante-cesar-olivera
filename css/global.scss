@@ -167,6 +167,7 @@ body {
 
 @media screen and (max-width: 650px) {
     .cover-title > h1 {
+        letter-spacing: 10px;
         font-size: 45px;
     }
 
@@ -189,7 +190,8 @@ body {
 
 @media screen and (max-width: 520px) {
     .cover-title > h1 {
-        font-size: 35px;
+        letter-spacing: 5px;
+        font-size: 30px;
     }
 
     .box-menu {

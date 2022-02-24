@@ -8,14 +8,6 @@ body {
     height: calc(100% - 50px);
 }
 
-    .cover-index > h1 {
-        font-size: 100px;
-    }
-
-    .cover-index > h3 {
-        font-size: 30px;
-    }
-
 /* Resumen Nostros */
 .nosotros {
     position: relative;
@@ -233,7 +225,7 @@ body {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .cover-index > h1 {
         font-size: 40px;
     }
